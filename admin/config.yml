@@ -1,125 +1,18 @@
-# Netlify CMS Configuration for GAV Levice Erasmus+ Website
-# ─────────────────────────────────────────────────────────────
 backend:
-  name: git-gateway
-  branch: main   # or "master" — whichever branch your Netlify site uses
+  name: github
+  repo: vivienbielik/gav-erasmus-website
+  branch: main
 
-# Media uploads go into a /media folder in your repo
-media_folder: "media"
-public_folder: "/media"
-
-# Identity widget — shows login button on your site
-local_backend: false
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
 
 collections:
-  # ── NEWS ARTICLES ──────────────────────────────────────────
   - name: "news"
-    label: "News & Activities"
-    label_singular: "News article"
-    folder: "_news"
+    label: "News"
+    folder: "content/news"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{slug}}"
     fields:
-      - { label: "Title (EN)", name: "title_en", widget: "string",
-          hint: "English title shown on the news card" }
-      - { label: "Title (SK)", name: "title_sk", widget: "string",
-          hint: "Slovak title shown when language is switched" }
-      - { label: "Date", name: "date", widget: "datetime",
-          date_format: "DD MMM YYYY", time_format: false }
-      - { label: "Category", name: "category", widget: "select",
-          options: ["Group Mobility","Return Visit","Preparation","Workshop","Event","Teacher Training"] }
-      - { label: "Cover photo", name: "cover", widget: "image", required: false,
-          hint: "Main photo shown on the news card (JPG or PNG)" }
-      - { label: "Short summary (EN)", name: "excerpt_en", widget: "text",
-          hint: "2–3 sentences shown on the card" }
-      - { label: "Short summary (SK)", name: "excerpt_sk", widget: "text" }
-      - { label: "Full article (EN)", name: "body_en", widget: "markdown",
-          hint: "Full article text — shown when visitor clicks Read more" }
-      - { label: "Full article (SK)", name: "body_sk", widget: "markdown" }
-      - { label: "Photos gallery", name: "photos", widget: "list",
-          required: false, field: { label: "Photo", name: "photo", widget: "image" } }
-
-  # ── PROJECT RESULTS ────────────────────────────────────────
-  - name: "results"
-    label: "Project Results"
-    label_singular: "Result"
-    folder: "_results"
-    create: true
-    fields:
-      - { label: "Title (EN)", name: "title_en", widget: "string" }
-      - { label: "Title (SK)", name: "title_sk", widget: "string" }
-      - { label: "Description (EN)", name: "desc_en", widget: "text" }
-      - { label: "Description (SK)", name: "desc_sk", widget: "text" }
-      - { label: "Status", name: "status", widget: "select",
-          options: ["Completed","In planning","Upcoming","In progress"] }
-      - { label: "Icon (emoji)", name: "icon", widget: "string",
-          default: "🎓", hint: "Paste an emoji e.g. ✈️ 🎓 🗳️" }
-      - { label: "Document / file", name: "file", widget: "file", required: false,
-          hint: "Upload a PDF report, presentation or document" }
-
-  # ── PROJECT OUTCOMES ───────────────────────────────────────
-  - name: "outcomes"
-    label: "Project Outcomes"
-    label_singular: "Outcome"
-    folder: "_outcomes"
-    create: true
-    fields:
-      - { label: "Title (EN)", name: "title_en", widget: "string" }
-      - { label: "Title (SK)", name: "title_sk", widget: "string" }
-      - { label: "Description (EN)", name: "desc_en", widget: "text" }
-      - { label: "Description (SK)", name: "desc_sk", widget: "text" }
-      - { label: "Icon (emoji)", name: "icon", widget: "string", default: "🌍" }
-
-  # ── GALLERY ALBUMS ─────────────────────────────────────────
-  - name: "gallery"
-    label: "Photo & Video Gallery"
-    label_singular: "Album"
-    folder: "_gallery"
-    create: true
-    fields:
-      - { label: "Album title (EN)", name: "title_en", widget: "string",
-          hint: "e.g. Madrid · February 2026" }
-      - { label: "Album title (SK)", name: "title_sk", widget: "string" }
-      - { label: "Photos", name: "photos", widget: "list",
-          field: { label: "Photo", name: "photo", widget: "image" } }
-      - { label: "Videos (YouTube/Vimeo links)", name: "videos", widget: "list",
-          required: false,
-          field: { label: "Video URL", name: "url", widget: "string",
-          hint: "Paste a YouTube or Vimeo link" } }
-      - { label: "Caption", name: "caption", widget: "text", required: false }
-
-  # ── TEAM MEMBERS ───────────────────────────────────────────
-  - name: "team"
-    label: "Team Members"
-    label_singular: "Team member"
-    folder: "_team"
-    create: true
-    fields:
-      - { label: "Role (EN)", name: "role_en", widget: "string",
-          hint: "e.g. Headmaster / Erasmus+ Project Coordinator" }
-      - { label: "Role (SK)", name: "role_sk", widget: "string" }
-      - { label: "Full name", name: "name", widget: "string" }
-      - { label: "Email", name: "email", widget: "string" }
-
-  # ── SITE SETTINGS ──────────────────────────────────────────
-  - name: "settings"
-    label: "Site settings"
-    files:
-      - label: "General"
-        name: "general"
-        file: "_data/settings.yml"
-        fields:
-          - { label: "Site title", name: "site_title", widget: "string",
-              default: "KA121 Erasmus+ | GAV Levice" }
-          - { label: "Project ID", name: "project_id", widget: "string",
-              default: "2025-1-SK01-KA121-SCH-000317879" }
-          - { label: "Coordinator name", name: "coordinator", widget: "string",
-              default: "Vivien Bieliková" }
-          - { label: "Coordinator email", name: "email", widget: "string",
-              default: "bielikova@gav.sk" }
-          - { label: "School website", name: "school_url", widget: "string",
-              default: "https://www.gav.sk" }
-          - { label: "Instagram handle", name: "instagram", widget: "string",
-              default: "gav.levice" }
-          - { label: "EPAS link", name: "epas_url", widget: "string",
-              default: "https://epas.vercel.app/" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
