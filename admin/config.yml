@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: vivienbielik/gav-erasmus-website
+  name: git-gateway
   branch: main
 
 media_folder: "images/uploads"
