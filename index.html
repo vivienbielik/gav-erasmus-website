@@ -1,19 +1,22 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GAV Levice — Website Admin</title>
-  <style>
-    body{margin:0;font-family:sans-serif;background:#0f0a2e;color:white;
-      display:flex;align-items:center;justify-content:center;min-height:100vh;flex-direction:column;gap:16px;}
-    .logo{font-size:32px;font-weight:700;color:#FFCC00;letter-spacing:2px;}
-    p{font-size:14px;opacity:.6;}
-  </style>
-</head>
-<body>
-  <div class="logo">GAV E+</div>
-  <p>Loading admin panel...</p>
-  <script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Admin</title>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  </head>
+  <body>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", function(user) {
+          if (!user) {
+            window.netlifyIdentity.on("login", function() {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
