@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+
+<html id="hr" lang="en"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/><link href="style-2.css" rel="stylesheet" type="text/css"/><link href="style-1.css" rel="stylesheet" type="text/css"/>
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=dd5cb829-4023-4e0a-9a1c-734990fc1dfc
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+<title>KA121 Erasmus+ | GAV Levice</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&amp;family=DM+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+</head>
+<body data-gr-ext-installed="" data-new-gr-c-s-check-loaded="14.1332.0">
+<div class="topbar">
+<div class="topbar-links">
+<a href="https://www.gav.sk/" target="_blank">🏫 <span data-t="gav_link">GAV Levice official website</span></a>
+<a href="#contact">✉ <span data-t="contact_link">Contact coordinator</span></a>
+</div>
+<div class="topbar-social">
+<a class="social-btn" href="https://www.instagram.com/gav_levice" target="_blank">📸 Instagram</a>
+<a class="social-btn" href="https://www.gav.sk/" target="_blank">🌐 gav.sk</a>
+</div>
+</div>
+<nav>
+<a class="nav-logo" href="#home">
+<div id="nav-logo-img" style="display:flex;width:36px;height:36px;border-radius:6px;overflow:hidden;"><img id="nav-logo-src" src="images/gav-logo.png" style="width:100%;height:100%;object-fit:contain;"/></div>
+<div><div class="nav-name">GAV Levice</div><div class="nav-sub">Erasmus+ KA121</div></div>
+</a>
+<ul class="nav-links">
+<li><a data-t="nav_about" href="#about">About</a></li>
+<li><a data-t="nav_partners" href="#partners">Partners</a></li>
+<li><a data-t="nav_team" href="#team">Team</a></li>
+<li><a data-t="nav_orgs" href="#orgs">Organisations</a></li>
+<li><a data-t="nav_news" href="#news">News</a></li>
+<li><a data-t="nav_indiv" href="#individual">Individual</a></li>
+<li><a data-t="nav_results" href="#results">Results</a></li>
+<li><a data-t="nav_outcomes" href="#outcomes">Outcomes</a></li>
+<li><a data-t="nav_gallery" href="#gallery">Gallery</a></li>
+<li><a data-t="nav_contact" href="#contact">Contact</a></li>
+</ul>
+<div class="nav-right">
+<div class="visitor-badge"><span class="visitor-dot"></span><span id="visitor-count">1,278</span> <span data-t="visitors">visitors</span></div>
+<div class="lang-switcher">
+<button class="lang-btn active" id="btn-en" title="English">🇬🇧</button>
+<button class="lang-btn" id="btn-sk" title="Slovenčina">🇸🇰</button>
+</div>
+<span class="nav-badge">2026–2027</span>
+</div>
+</nav>
+<div class="section-nav">
+<a class="snav-btn active" data-t="snav_home" href="#home">🏠 Home</a>
+<a class="snav-btn" data-t="snav_about" href="#about">📋 About</a>
+<a class="snav-btn" data-t="snav_partners" href="#partners">🤝 Partners</a>
+<a class="snav-btn" data-t="snav_team" href="#team">👥 Team</a>
+<a class="snav-btn" data-t="snav_orgs" href="#orgs">🏢 Organisations</a>
+<a class="snav-btn" data-t="snav_news" href="#news">📰 News</a>
+<a class="snav-btn" data-t="snav_indiv" href="#individual">✈️ Individual</a>
+<a class="snav-btn" data-t="snav_results" href="#results">🎓 Results</a>
+<a class="snav-btn" data-t="snav_outcomes" href="#outcomes">🏆 Outcomes</a>
+<a class="snav-btn" data-t="snav_gallery" href="#gallery">🖼 Gallery</a>
+<a class="snav-btn" data-t="snav_contact" href="#contact">✉ Contact</a>
+<a class="snav-btn" data-t="snav_gav" href="https://www.gav.sk/" target="_blank">🏫 GAV Levice</a>
+<a class="snav-btn" href="https://www.instagram.com/gav_levice" target="_blank">📸 Instagram</a>
+</div>
+<!-- LOGO CUSTOMISER -->
+<div class="logo-panel">
+<button class="logo-trigger">⚙ <span data-t="customise">Customise logos</span></button>
+<div class="logo-drawer" id="logo-drawer">
+<h4 data-t="logo_settings">Logo settings</h4>
+<p data-t="logo_instructions">Upload any logo — it replaces the text placeholder instantly everywhere on the page.</p>
+<div class="logo-sec">
+<label class="lbl" data-t="school_logo">🏫 School / project logo</label>
+<div class="logo-upload">
+<div class="logo-preview" id="school-preview"><span>GAV</span></div>
+<label class="upload-btn" data-t="upload_logo" for="school-upload">Upload image</label>
+<input accept="image/*" id="school-upload" type="file"/>
+</div>
+</div>
+<div class="logo-sec">
+<label class="lbl" data-t="eu_logo">🇪🇺 EU co-funded logo</label>
+<div class="logo-upload">
+<div class="logo-preview" id="eu-preview"><span>EU</span></div>
+<label class="upload-btn" data-t="upload_logo" for="eu-upload">Upload image</label>
+<input accept="image/*" id="eu-upload" type="file"/>
+</div>
+</div>
+<div class="logo-sec">
+<label class="lbl" data-t="proj_logo">✚ Extra logo (optional)</label>
+<div class="logo-upload">
+<div class="logo-preview" id="proj-preview"><span>+</span></div>
+<label class="upload-btn" data-t="upload_logo" for="proj-upload">Upload image</label>
+<input accept="image/*" id="proj-upload" type="file"/>
+</div>
+</div>
+</div>
+</div>
+<!-- ═══ HERO ═══ -->
+<section class="hero editable-section" id="home">
+<div class="stars" id="stars"><div class="star" style="left: 69.2482%; top: 72.7793%; width: 3.62438px; height: 3.62438px; animation-delay: 0.00364072s;"></div><div class="star" style="left: 26.9993%; top: 58.9862%; width: 3.70281px; height: 3.70281px; animation-delay: 2.51294s;"></div><div class="star" style="left: 26.1552%; top: 55.8518%; width: 4.54806px; height: 4.54806px; animation-delay: 1.78627s;"></div><div class="star" style="left: 79.0358%; top: 42.2772%; width: 2.15566px; height: 2.15566px; animation-delay: 0.310233s;"></div><div class="star" style="left: 20.2509%; top: 86.0672%; width: 2.33875px; height: 2.33875px; animation-delay: 3.46304s;"></div><div class="star" style="left: 65.6387%; top: 0.764059%; width: 4.10423px; height: 4.10423px; animation-delay: 0.607368s;"></div><div class="star" style="left: 44.9552%; top: 29.1829%; width: 2.30949px; height: 2.30949px; animation-delay: 1.91208s;"></div><div class="star" style="left: 21.2141%; top: 41.7061%; width: 2.57842px; height: 2.57842px; animation-delay: 3.66207s;"></div><div class="star" style="left: 23.0781%; top: 50.2489%; width: 4.40287px; height: 4.40287px; animation-delay: 0.499078s;"></div><div class="star" style="left: 72.6288%; top: 48.8611%; width: 4.8964px; height: 4.8964px; animation-delay: 1.69212s;"></div><div class="star" style="left: 10.5678%; top: 96.5324%; width: 4.62882px; height: 4.62882px; animation-delay: 2.64517s;"></div><div class="star" style="left: 47.4467%; top: 88.9943%; width: 2.87284px; height: 2.87284px; animation-delay: 0.278491s;"></div><div class="star" style="left: 70.2828%; top: 6.82153%; width: 2.95041px; height: 2.95041px; animation-delay: 2.47985s;"></div><div class="star" style="left: 58.362%; top: 10.1881%; width: 2.24499px; height: 2.24499px; animation-delay: 2.52927s;"></div><div class="star" style="left: 30.1553%; top: 53.017%; width: 2.0737px; height: 2.0737px; animation-delay: 1.28715s;"></div><div class="star" style="left: 5.39222%; top: 39.858%; width: 2.96199px; height: 2.96199px; animation-delay: 3.45417s;"></div><div class="star" style="left: 54.6016%; top: 57.498%; width: 3.10585px; height: 3.10585px; animation-delay: 2.54343s;"></div><div class="star" style="left: 23.7853%; top: 89.611%; width: 2.03877px; height: 2.03877px; animation-delay: 3.33439s;"></div><div class="star" style="left: 78.5579%; top: 93.2634%; width: 4.89421px; height: 4.89421px; animation-delay: 3.39028s;"></div><div class="star" style="left: 77.8658%; top: 21.5108%; width: 2.08598px; height: 2.08598px; animation-delay: 1.81732s;"></div><div class="star" style="left: 27.5072%; top: 95.4392%; width: 2.51429px; height: 2.51429px; animation-delay: 0.32783s;"></div><div class="star" style="left: 41.8552%; top: 79.6579%; width: 2.94397px; height: 2.94397px; animation-delay: 0.556891s;"></div><div class="star" style="left: 67.1985%; top: 61.8561%; width: 2.12336px; height: 2.12336px; animation-delay: 1.42188s;"></div><div class="star" style="left: 13.1552%; top: 3.57893%; width: 3.6443px; height: 3.6443px; animation-delay: 0.45851s;"></div><div class="star" style="left: 54.728%; top: 97.9589%; width: 2.80298px; height: 2.80298px; animation-delay: 2.77482s;"></div><div class="star" style="left: 52.0868%; top: 53.0499%; width: 2.79772px; height: 2.79772px; animation-delay: 0.137357s;"></div><div class="star" style="left: 55.0022%; top: 15.4691%; width: 3.03443px; height: 3.03443px; animation-delay: 0.954826s;"></div><div class="star" style="left: 51.3085%; top: 33.1633%; width: 4.11282px; height: 4.11282px; animation-delay: 3.13093s;"></div><div class="star" style="left: 8.27207%; top: 47.6488%; width: 3.07776px; height: 3.07776px; animation-delay: 3.87197s;"></div><div class="star" style="left: 79.9743%; top: 1.60529%; width: 2.27207px; height: 2.27207px; animation-delay: 0.591833s;"></div><div class="star" style="left: 21.9079%; top: 50.6367%; width: 4.49171px; height: 4.49171px; animation-delay: 1.82287s;"></div><div class="star" style="left: 54.3477%; top: 54.1354%; width: 4.15724px; height: 4.15724px; animation-delay: 3.92289s;"></div><div class="star" style="left: 5.32833%; top: 62.7362%; width: 3.80553px; height: 3.80553px; animation-delay: 1.04513s;"></div><div class="star" style="left: 75.6752%; top: 70.0923%; width: 4.36474px; height: 4.36474px; animation-delay: 1.04946s;"></div><div class="star" style="left: 50.9815%; top: 19.4381%; width: 2.73253px; height: 2.73253px; animation-delay: 0.733793s;"></div><div class="star" style="left: 2.84111%; top: 91.0863%; width: 3.35463px; height: 3.35463px; animation-delay: 1.77244s;"></div><div class="star" style="left: 2.18712%; top: 52.8288%; width: 2.36915px; height: 2.36915px; animation-delay: 2.43858s;"></div><div class="star" style="left: 2.50488%; top: 45.4203%; width: 3.63257px; height: 3.63257px; animation-delay: 2.73054s;"></div><div class="star" style="left: 91.5892%; top: 55.219%; width: 4.59646px; height: 4.59646px; animation-delay: 3.23177s;"></div><div class="star" style="left: 36.3944%; top: 86.285%; width: 4.55354px; height: 4.55354px; animation-delay: 1.03614s;"></div><div class="star" style="left: 22.5841%; top: 36.6287%; width: 4.18598px; height: 4.18598px; animation-delay: 0.360114s;"></div><div class="star" style="left: 48.3603%; top: 52.9391%; width: 2.69363px; height: 2.69363px; animation-delay: 3.50295s;"></div><div class="star" style="left: 21.8829%; top: 70.043%; width: 3.0539px; height: 3.0539px; animation-delay: 2.00928s;"></div><div class="star" style="left: 14.7556%; top: 90.6007%; width: 3.02503px; height: 3.02503px; animation-delay: 3.70534s;"></div><div class="star" style="left: 97.3623%; top: 87.3915%; width: 2.66695px; height: 2.66695px; animation-delay: 2.92012s;"></div><div class="star" style="left: 13.8391%; top: 32.4404%; width: 4.41644px; height: 4.41644px; animation-delay: 0.691956s;"></div><div class="star" style="left: 52.5369%; top: 21.0332%; width: 2.73409px; height: 2.73409px; animation-delay: 2.24914s;"></div><div class="star" style="left: 1.68511%; top: 85.298%; width: 2.49052px; height: 2.49052px; animation-delay: 3.95375s;"></div><div class="star" style="left: 45.4226%; top: 75.4158%; width: 4.80972px; height: 4.80972px; animation-delay: 3.06744s;"></div><div class="star" style="left: 86.436%; top: 38.1937%; width: 4.45809px; height: 4.45809px; animation-delay: 0.463184s;"></div><div class="star" style="left: 79.8476%; top: 84.8303%; width: 3.1019px; height: 3.1019px; animation-delay: 1.75135s;"></div><div class="star" style="left: 39.4176%; top: 23.0191%; width: 3.04776px; height: 3.04776px; animation-delay: 2.74519s;"></div><div class="star" style="left: 12.9833%; top: 52.6705%; width: 4.96586px; height: 4.96586px; animation-delay: 3.80039s;"></div><div class="star" style="left: 14.782%; top: 84.4162%; width: 2.83474px; height: 2.83474px; animation-delay: 0.253851s;"></div><div class="star" style="left: 93.0549%; top: 86.7351%; width: 3.66613px; height: 3.66613px; animation-delay: 3.96878s;"></div><div class="star" style="left: 26.4612%; top: 17.9926%; width: 3.94001px; height: 3.94001px; animation-delay: 3.16103s;"></div><div class="star" style="left: 47.5816%; top: 94.6555%; width: 3.06086px; height: 3.06086px; animation-delay: 2.41358s;"></div><div class="star" style="left: 86.5868%; top: 46.3256%; width: 3.16371px; height: 3.16371px; animation-delay: 2.63853s;"></div><div class="star" style="left: 63.0975%; top: 57.9165%; width: 2.43548px; height: 2.43548px; animation-delay: 3.50694s;"></div><div class="star" style="left: 3.28223%; top: 57.3189%; width: 3.98137px; height: 3.98137px; animation-delay: 2.43724s;"></div><div class="star" style="left: 58.7191%; top: 22.2163%; width: 4.74487px; height: 4.74487px; animation-delay: 1.49557s;"></div><div class="star" style="left: 35.3666%; top: 54.3036%; width: 3.18657px; height: 3.18657px; animation-delay: 3.06375s;"></div><div class="star" style="left: 39.7515%; top: 50.8419%; width: 4.4124px; height: 4.4124px; animation-delay: 1.26401s;"></div><div class="star" style="left: 41.6775%; top: 46.9189%; width: 2.80683px; height: 2.80683px; animation-delay: 0.759029s;"></div><div class="star" style="left: 49.7979%; top: 62.5153%; width: 3.75928px; height: 3.75928px; animation-delay: 2.14468s;"></div><div class="star" style="left: 42.5415%; top: 85.9603%; width: 4.01067px; height: 4.01067px; animation-delay: 0.743766s;"></div><div class="star" style="left: 10.1671%; top: 38.698%; width: 4.03064px; height: 4.03064px; animation-delay: 3.85367s;"></div><div class="star" style="left: 0.100724%; top: 83.211%; width: 4.29758px; height: 4.29758px; animation-delay: 3.5741s;"></div><div class="star" style="left: 81.7649%; top: 11.954%; width: 4.34172px; height: 4.34172px; animation-delay: 3.239s;"></div><div class="star" style="left: 37.4007%; top: 39.8894%; width: 2.93025px; height: 2.93025px; animation-delay: 3.8709s;"></div></div>
+<button class="edit-btn" data-edit="home">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="hc">
+<div class="hbadge">⭐ Erasmus+ KA121 · <span data-t="accredited">Accredited Project</span></div>
+<h1><span data-t="hero_line1">Opening Borders,</span><br/><span data-t="hero_span" style="color:var(--eug)">Expanding Minds</span></h1>
+<p class="hdesc" data-t="hero_desc">An accredited Erasmus+ KA121 mobility project connecting schools across Slovakia, Spain, Germany and Finland — building skills for the 21st century through international cooperation, digital innovation and inclusive education.</p>
+<div class="hmeta">
+<div><div class="hml" data-t="lbl_coordinator">Coordinator</div><div class="hmv" data-t="val_coordinator">GAV Levice, Slovakia</div></div>
+<div><div class="hml" data-t="lbl_duration">Duration</div><div class="hmv" data-t="val_duration">June 2026 – August 2027</div></div>
+<div><div class="hml" data-t="lbl_countries">Partner countries</div><div class="hmv">🇸🇰 🇪🇸 🇩🇪 🇫🇮</div></div>
+<div><div class="hml">Project ID</div><div class="hmv">2026-1-SK01-KA121-SCH-000409795</div></div>
+</div>
+<div class="hcta"><a class="bp" data-t="btn_news" href="#news">Latest news</a><a class="bo" data-t="btn_about" href="#about">About the project</a></div>
+</div>
+<div class="hscroll">scroll ↓</div>
+</section>
+<!-- ═══ ABOUT ═══ -->
+<section class="editable-section" id="about">
+<button class="edit-btn" data-edit="about">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_about">About the project</div><div class="div"></div>
+<div class="agrid">
+<div>
+<h2 class="stitle" data-t="about_title">Our goals &amp; vision</h2>
+<p data-t="about_intro" style="font-size:1rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.8;">We believe education becomes truly transformative when it crosses borders.</p>
+<ul class="gl-list">
+<li><span class="gd"></span><span data-t="g1">Cross-border cooperation with EU schools of similar curriculum scope</span></li>
+<li><span class="gd"></span><span data-t="g2">English language training for non-language teachers at various levels</span></li>
+<li><span class="gd"></span><span data-t="g3">Student group mobilities fostering Spanish, German and English language skills</span></li>
+<li><span class="gd"></span><span data-t="g4">Democratic thinking, active citizenship and critical thinking development</span></li>
+<li><span class="gd"></span><span data-t="g5">Inclusion — integrating students with special needs and fewer opportunities</span></li>
+<li><span class="gd"></span><span data-t="g6">Digital skills for language teachers — AI tools, IT in education, online safety</span></li>
+<li><span class="gd"></span><span data-t="g7">Methodological innovation: CLIL, PBL and modern teaching approaches</span></li>
+<li><span class="gd"></span><span data-t="g8">Involving parents and the wider school community</span></li>
+</ul>
+</div>
+<div><div class="idc">
+<h3 data-t="proj_id_title">Project identification</h3>
+<div class="idr"><span class="idl" data-t="id_type">Type</span><span class="idv">KA121 – Accredited School Education</span></div>
+<div class="idr"><span class="idl" data-t="id_num">Project number</span><span class="idv">2026-1-SK01-KA121-SCH-000409795</span></div>
+<div class="idr"><span class="idl" data-t="id_school">Coordinator</span><span class="idv">Gymnázium Andreja Vrábla, Levice</span></div>
+<div class="idr"><span class="idl" data-t="id_pcoord">Project coordinator</span><span class="idv">Vivien Bieliková</span></div>
+<div class="idr"><span class="idl" data-t="id_start">Start date</span><span class="idv" data-t="val_start">1 June 2026</span></div>
+<div class="idr"><span class="idl" data-t="id_end">End date</span><span class="idv" data-t="val_end">31 August 2027</span></div>
+<div class="idr"><span class="idl" data-t="id_dur">Duration</span><span class="idv" data-t="val_dur">15 months</span></div>
+<div class="idr"><span class="idl" data-t="id_web">School website</span><span class="idv"><a href="https://www.gav.sk/" target="_blank">www.gav.sk</a></span></div>
+</div></div>
+</div>
+</div>
+</section>
+<!-- ═══ PARTNERS ═══ -->
+<section class="editable-section" id="partners">
+<button class="edit-btn" data-edit="partners">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_partners">Our network</div><div class="div"></div>
+<h2 class="stitle" data-t="partners_title">Partner institutions</h2>
+<p class="slead" data-t="partners_lead">Six institutions from four countries, united by a shared commitment to quality education and international exchange.</p>
+<div class="pgrid">
+<div class="pc coord"><div class="pf">🇸🇰</div><div class="pn" data-t="p1_name">Gymnázium Andreja Vrábla Levice</div><div class="pl" data-t="p1_loc">Levice, Slovakia</div><span class="cb">✦ <span data-t="coordinator">Coordinator</span></span></div>
+<div class="pc"><div class="pf">🇪🇸</div><div class="pn" data-t="p3_name">IES El Grao</div><div class="pl" data-t="p3_loc">Valencia, Spain</div></div>
+<div class="pc"><div class="pf">🇩🇪</div><div class="pn" data-t="p4_name">IGS Schaumburg</div><div class="pl" data-t="p4_loc">Stadthagen, Germany</div></div>
+<div class="pc"><div class="pf">🇫🇮</div><div class="pn" data-t="p5_name">Leppävirran Lukio</div><div class="pl" data-t="p5_loc">Leppävirta, Finland</div></div>
+<div class="pc"><div class="pf">🇪🇺</div><div class="pn" data-t="p6_name">Europass Teacher Academy</div><div class="pl" data-t="p6_loc">Training provider</div><span class="tb" data-t="training_partner">Training partner</span></div>
+</div>
+</div>
+</section>
+<!-- ═══ TEAM ═══ -->
+<section class="editable-section" id="team">
+<button class="edit-btn" data-edit="team">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_team">Project team</div><div class="div"></div>
+<h2 class="stitle" data-t="team_title">Meet the team</h2>
+<p class="slead" data-t="team_lead">The GAV Levice staff leading and supporting the Erasmus+ KA121 project. Hover over the section and click “Edit section” to add names and email addresses.</p>
+<div class="team-grid">
+<div class="team-card">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:#1A5276;border-radius:0;"></div>
+<div class="team-role-lbl" data-t="role_headmaster">Project management member</div>
+<div class="team-name-val" data-t="headmaster_name">Mgr. Vladimír Tóth</div>
+<div class="team-email-val" data-t="headmaster_email"><a href="mailto:riaditel@gav.sk">riaditel@gav.sk</a></div>
+</div>
+<div class="team-card">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:#117A65;border-radius:0;"></div>
+<div class="team-role-lbl" data-t="role_deputy1">Project management member</div>
+<div class="team-name-val" data-t="deputy1_name">Ing. Vieroslava Potočárová</div>
+<div class="team-email-val" data-t="deputy1_email"><a href="mailto:potocarova.zrs@gav.sk">potocarova.zrs@gav.sk</a></div>
+</div>
+<div class="team-card">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:#117A65;border-radius:0;"></div>
+<div class="team-role-lbl" data-t="role_deputy2">Project management member</div>
+<div class="team-name-val" data-t="deputy2_name">Mgr. Jana Kvočková</div>
+<div class="team-email-val" data-t="deputy2_email"><a href="mailto:kvockova.zrs@gav.sk">kvockova.zrs@gav.sk</a></div>
+</div>
+<div class="team-card">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:#6E2F8A;border-radius:0;"></div>
+<div class="team-role-lbl" data-t="role_finance">Project administration</div>
+<div class="team-name-val" data-t="finance_name">Mgr. Eva Krekovičová</div>
+<div class="team-email-val" data-t="finance_email"><a href="mailto:ekonomka@gav.sk">ekonomka@gav.sk</a></div>
+</div>
+<div class="team-card">
+<div style="position:absolute;top:0;left:0;right:0;height:3px;background:#2E9E5B;border-radius:0;"></div>
+<div class="team-role-lbl" data-t="role_coord">Project coordinator</div>
+<div class="team-name-val" data-t="coord_name">PaedDr. Vivien Bieliková</div>
+<div class="team-email-val" data-t="coord_email"><a href="mailto:vivien.bielik@gmail.com">vivien.bielik@gmail.com</a></div>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══ ORGANISATIONS ═══ -->
+<section class="editable-section" id="orgs">
+<button class="edit-btn" data-edit="orgs">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_orgs">Cooperation</div><div class="div"></div>
+<h2 class="stitle" data-t="orgs_title">Organisations we cooperate with</h2>
+<p class="slead" data-t="orgs_lead">Our project is enriched by collaboration with diplomatic, cultural, civic and municipal organisations across Europe.</p>
+<div class="orgs-grid">
+<div class="org-card"><div class="org-flag">🇩🇪</div><div class="org-name" data-t="org2_name">German Embassy in Bratislava</div><div class="org-role" data-t="org2_role">Liaison for Slovak–German cultural exchange and educational cooperation</div><span class="org-badge" data-t="org2_type">Embassy</span></div>
+<div class="org-card"><div class="org-flag">🇩🇪</div><div class="org-name" data-t="org3_name">Goethe-Institut</div><div class="org-role" data-t="org3_role">German language promotion, cultural programmes and teacher resources</div><span class="org-badge" data-t="org3_type">Cultural Institute</span></div>
+<div class="org-card"><div class="org-flag">🇦🇮</div><div class="org-name" data-t="org4_name">Amnesty International</div><div class="org-role" data-t="org4_role">Human rights education, supporting our democracy and active citizenship workshops</div><span class="org-badge" data-t="org4_type">NGO</span></div>
+<div class="org-card"><div class="org-flag">🇸🇰</div><div class="org-name" data-t="org5_name">Centre for Migration, Bratislava</div><div class="org-role" data-t="org5_role">Migration role-play workshops educating students about the human dimension of migration</div><span class="org-badge" data-t="org5_type">Educational Centre</span></div>
+<div class="org-card"><div class="org-flag">🇸🇰</div><div class="org-name" data-t="org7_name">Municipality of Levice</div><div class="org-role" data-t="org7_role">Local government partner providing facilities, cultural support and community engagement</div><span class="org-badge" data-t="org7_type">Municipality</span></div>
+<div class="org-card"><div class="org-flag">🇩🇪</div><div class="org-name" data-t="org8_name">Municipality of Hannover</div><div class="org-role" data-t="org8_role">Regional partner supporting German–Slovak educational ties and youth exchange</div><span class="org-badge" data-t="org8_type">Municipality</span></div>
+</div>
+</div>
+</section>
+<!-- ═══ NEWS ═══ -->
+<section class="editable-section" id="news">
+<button class="edit-btn" data-edit="news">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_news">Latest updates</div><div class="div"></div>
+<h2 class="stitle" data-t="news_title">News &amp; activities</h2>
+<p class="slead" data-t="news_lead">Follow our project journey — mobilities, workshops and milestones as they happen.</p>
+<div class="ngrid">
+<div class="nc"><div class="ni"><img alt="Valencia" src="images/img-03-2158988489.jpg"/><span class="ncat" data-t="cat_group">Group Mobility</span></div><div class="nb"><div class="nt" data-t="n3t">Valencia meets Levice — a winter exchange full of firsts</div><div class="nx" data-t="n3x">IES El Grao students — Christmas market, castle, skating, Banská Štiavnica and Bratislava.</div><div class="nft"><span class="nd">15–19 Dec 2025</span><span class="nr" data-t="read_more">Read more →</span></div></div></div>
+<div class="nc"><div class="ni"><img alt="Germany" src="images/img-04-8a5e58da61.jpg"/><span class="ncat" data-t="cat_group">Group Mobility</span></div><div class="nb"><div class="nt" data-t="n4t">Germany comes to Levice — IGS Schaumburg exchange week</div><div class="nx" data-t="n4x">IGS Schaumburg students — castle, Koliba dinner, go-karting, migration workshops and Bratislava.</div><div class="nft"><span class="nd">2–6 Mar 2026</span><span class="nr" data-t="read_more">Read more →</span></div></div></div>
+</div>
+</div>
+</section>
+<!-- ═══ MODALS ═══ -->
+<div class="mbg" id="m3"><div class="modal"><button class="mclose">×</button><div class="mhi"><img alt="Valencia" src="images/img-03-2158988489.jpg"/></div><div class="mbody"><div class="mtag">Group Mobility · Levice, Slovakia</div><h2 class="mtitle" data-t="n3t">Valencia meets Levice</h2><div class="mmeta">15–19 December 2025 · GAV Levice · 🇪🇸 🇸🇰</div><div class="mtext"><p data-t="m3p1">Students from IES El Grao Valencia arrived in Levice just before Christmas — festive lights, Christmas market and snow in Banská Štiavnica.</p><h4 data-t="m3h1">Day 1 — Christmas market</h4><p data-t="m3p2">Levice Christmas market on Sunday evening, then bar Trip for pizza, fries and first cross-language conversations.</p><h4 data-t="m3h2">Day 2 — School &amp; Levice Castle</h4><p data-t="m3p3">Ice-breaking games, fake news lesson with Ms. Bieliková, Spanish Christmas culture class, then a city sightseeing game to Levice Castle.</p><h4 data-t="m3h3">Day 3 — Ice skating &amp; Banská Štiavnica</h4><p data-t="m3p4">First time on skates for many Spanish students. Snowy Banská Štiavnica and the Cesta Časom museum.</p><h4 data-t="m3h4">Day 4 — Bratislava</h4><p data-t="m3p5">Sightseeing and the iconic group photo in front of the Slovak Parliament with three national flags.</p><h4 data-t="m3h5">Democracy across the curriculum</h4><p data-t="m3p6">English and Philosophy lessons on democracy and EU by Ms. Riecka and Ms. Belicova throughout the week.</p></div></div></div></div>
+<div class="mbg" id="m4"><div class="modal"><button class="mclose">×</button><div class="mhi"><img alt="Castle" src="images/img-06-5883919893.jpg"/></div><div class="mbody"><div class="mtag">Group Mobility · Levice, Slovakia</div><h2 class="mtitle" data-t="n4t">Germany comes to Levice</h2><div class="mmeta">2–6 March 2026 · GAV Levice · 🇩🇪 🇸🇰</div><div class="mtext"><p data-t="m4p1">Students from IGS Schaumburg in Stadthagen arrived in Levice for a full week of cultural exchange and school activities.</p><h4 data-t="m4h1">Monday — City game, Levice Castle &amp; Koliba dinner</h4><p data-t="m4p2">EU lessons in English and German, city riddle game, Levice Castle, synagogue and town hall. Dinner at Koliba u Šidla — bryndzóve halušky and Kofola. Some students also visited Esztergom Cathedral in Hungary.</p><h4 data-t="m4h2">Tuesday — Migration workshop, picnic &amp; go-karting</h4><p data-t="m4p3">IOM migration role-play workshop, Slovak food picnic in the castle park, go-karting in Seč and motorbike riding.</p><h4 data-t="m4h3">Wednesday — EU lessons &amp; laser arena in Nitra</h4><p data-t="m4p4">Slovak students delivered EU presentations in German. Kahoot on democracy, then Nitra for laser arena and sushi.</p><h4 data-t="m4h4">Thursday — Bratislava</h4><p data-t="m4p5">Old town sightseeing, the Čumil statue, 1602 witch burning plaque, tourist train, Eurovea and bar Trip.</p></div></div></div></div>
+<!-- ═══ INDIVIDUAL MOBILITIES ═══ -->
+<section class="editable-section" id="individual">
+<button class="edit-btn" data-edit="individual">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_indiv">Student exchange</div><div class="div"></div>
+<h2 class="stitle" data-t="indiv_title">Individual mobilities</h2>
+<p class="slead" data-t="indiv_lead">Selected students from GAV Levice undertake long-term individual study placements at partner schools abroad — an immersive experience deepening language skills, cultural understanding and personal growth.</p>
+
+
+</div>
+</section>
+<!-- ═══ RESULTS ═══ -->
+<section class="editable-section" id="results">
+<button class="edit-btn" data-edit="results">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_results">Student work &amp; outputs</div><div class="div"></div>
+<h2 class="stitle" data-t="results_title">Project results</h2>
+<p class="slead" data-t="results_lead">Outputs and student work produced throughout the project — updated as activities are completed.</p>
+<div class="rg">
+<div class="rc"><div class="ri">🇪🇸</div><div class="rt" data-t="r1t">Valencia → Levice</div><div class="rd" data-t="r1d">IES El Grao hosted at GAV — Dec 2025</div><span class="rs s-done" data-t="completed">Completed</span></div>
+<div class="rc"><div class="ri">🇩🇪</div><div class="rt" data-t="r2t">Germany → Levice</div><div class="rd" data-t="r2d">IGS Schaumburg hosted at GAV — Mar 2026</div><span class="rs s-done" data-t="completed">Completed</span></div>
+<div class="rc"><div class="ri">🗃️</div><div class="rt" data-t="r5t">Democracy workshops</div><div class="rd" data-t="r5d">EU, citizenship, fake news, migration — across all mobilities</div><span class="rs s-done" data-t="completed">Completed</span></div>
+<div class="rc"><div class="ri">🎥️</div><div class="rt" data-t="r6t">School TV interviews</div><div class="rd" data-t="r6d">Students compared Slovak and Spanish life for school television</div><span class="rs s-done" data-t="completed">Completed</span></div>
+<div class="rc"><div class="ri">🎓</div><div class="rt" data-t="r7t">Teacher training</div><div class="rd" data-t="r7d">English &amp; digital skills via Europass Teacher Academy</div><span class="rs s-plan" data-t="in_planning">In planning</span></div>
+<div class="rc"><div class="ri">🇫🇮</div><div class="rt" data-t="r8t">Finland mobility</div><div class="rd" data-t="r8d">Exchange with Leppävirran Lukio</div><span class="rs s-plan" data-t="upcoming">Upcoming</span></div>
+</div>
+</div>
+</section>
+<!-- ═══ OUTCOMES ═══ -->
+<section class="editable-section" id="outcomes">
+<button class="edit-btn" data-edit="outcomes">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_outcomes">Impact</div><div class="div"></div>
+<h2 class="stitle" data-t="outcomes_title">Project outcomes</h2>
+<p class="slead" data-t="outcomes_lead">What this project has achieved and what it is building toward — for students, teachers, the school and the wider community.</p>
+<div class="outcomes-grid">
+<div class="outcome-card"><div class="outcome-icon">🌐</div><div class="outcome-title" data-t="oc1t">International competence</div><div class="outcome-desc" data-t="oc1d">Students developed real cross-cultural communication skills, formed lasting friendships across five countries and gained first-hand experience of living and studying in a different European culture.</div></div>
+<div class="outcome-card"><div class="outcome-icon">🗣️</div><div class="outcome-title" data-t="oc2t">Language development</div><div class="outcome-desc" data-t="oc2d">Meaningful improvement in English, Spanish and German through authentic communication in mobility contexts. Non-language teachers also strengthened their English for classroom use.</div></div>
+<div class="outcome-card"><div class="outcome-icon">🗃️</div><div class="outcome-title" data-t="oc3t">Democratic values &amp; critical thinking</div><div class="outcome-desc" data-t="oc3d">Students across all mobility schools engaged with workshops on EU citizenship, fake news, the Holocaust and human rights — building informed, reflective young Europeans.</div></div>
+<div class="outcome-card"><div class="outcome-icon">🤝</div><div class="outcome-title" data-t="oc4t">Inclusion &amp; diversity</div><div class="outcome-desc" data-t="oc4d">The project actively integrated students with special needs and from fewer-opportunity backgrounds into all mobility activities, creating a genuinely inclusive European learning community.</div></div>
+<div class="outcome-card"><div class="outcome-icon">💻</div><div class="outcome-title" data-t="oc5t">Teacher professional development</div><div class="outcome-desc" data-t="oc5d">Language and non-language teachers gained new skills in digital tools, AI in education, CLIL and PBL methodologies, directly improving the quality of teaching at GAV Levice.</div></div>
+<div class="outcome-card"><div class="outcome-icon">🏢</div><div class="outcome-title" data-t="oc6t">Institutional capacity</div><div class="outcome-desc" data-t="oc6d">GAV Levice has strengthened its position as an internationally active school, building a network of European partner institutions and a model of accredited Erasmus+ mobility for other Slovak schools.</div></div>
+</div>
+</div>
+</section>
+<!-- ═══ GALLERY ═══ -->
+<section class="editable-section" id="gallery">
+<button class="edit-btn" data-edit="gallery">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_gallery">Photo gallery</div><div class="div"></div>
+<h2 class="stitle" data-t="gallery_title">Moments from our mobilities</h2>
+<p class="slead" data-t="gallery_lead">Photos from all group mobilities. Click “Edit section” to add your own photos to any album.</p>
+<div class="galb"><span data-t="alb_valencia">Valencia visit to Levice · December 2025</span></div>
+<div class="gg" id="alb-valencia">
+<div class="gi"><img alt="Bratislava" src="images/img-03-2158988489.jpg"/><div class="gcap" data-t="cap6">Group photo at Slovak Parliament, Bratislava</div></div>
+<div class="gi"><img alt="Castle" src="images/img-09-e22dff4d89.jpg"/><div class="gcap" data-t="cap7">Levice Castle sightseeing</div></div>
+<div class="gi"><img alt="Skating" src="images/img-10-286aa22ee4.jpg"/><div class="gcap" data-t="cap8">Ice skating in Levice</div></div>
+<div class="gi"><img alt="Shopping" src="images/img-11-0266991b2c.jpg"/><div class="gcap" data-t="cap9">Students at Dituria shopping centre</div></div>
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+</div>
+<div class="galb"><span data-t="alb_germany">IGS Schaumburg visit to Levice · March 2026</span></div>
+<div class="gg" id="alb-germany">
+<div class="gi"><img alt="Levice Castle" src="images/img-06-5883919893.jpg"/><div class="gcap" data-t="cap10">Levice Castle on a sunny March day</div></div>
+<div class="gi"><img alt="Halusky" src="images/img-12-14b06cb6a0.jpg"/><div class="gcap" data-t="cap11">Bryndzóve halušky with Kofola at Koliba</div></div>
+<div class="gi"><img alt="Statue 1" src="images/img-04-8a5e58da61.jpg"/><div class="gcap" data-t="cap12">Posing with Čumil statue, Bratislava</div></div>
+<div class="gi"><img alt="Statue 2" src="images/img-13-ee5676b209.jpg"/><div class="gcap" data-t="cap13">Group at the Čumil "Man at Work" statue</div></div>
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+</div>
+<div class="galb"><span data-t="alb_finland">Finland mobility · Coming soon</span></div>
+<div class="gg" id="alb-finland">
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+<div class="gi-ph"><span>+</span><p data-t="add_photo">Add photo</p></div>
+</div>
+<input accept="image/*" id="photo-file-input" multiple="" style="display:none" type="file"/>
+<button class="add-album-btn" data-t="add_album">+ Add new album</button>
+</div>
+</section>
+<!-- ═══ CONTACT ═══ -->
+<section class="editable-section" id="contact">
+<button class="edit-btn" data-edit="contact">✎ <span data-t="edit_section">Edit section</span></button>
+<div class="container">
+<div class="stag" data-t="tag_contact">Get in touch</div><div class="div"></div>
+<div class="cgrid">
+<div class="cinfo">
+<h3 data-t="contact_title">Contact us</h3>
+<div class="cdet"><span class="ico">🏛️</span><div class="inf"><strong data-t="lbl_school">Coordinating school</strong>Gymnázium Andreja Vrábla Levice<br/>Levice, Slovakia</div></div>
+<div class="cdet"><span class="ico">👩‍💼</span><div class="inf"><strong data-t="lbl_coord">Project coordinator</strong>Vivien Bieliková</div></div>
+<div class="cdet"><span class="ico">📧</span><div class="inf"><strong data-t="lbl_email">Email</strong><a data-t="val_email" href="mailto:bielikova@gav.sk">bielikova@gav.sk</a><br/></div></div>
+<div class="cdet"><span class="ico">🌐</span><div class="inf"><strong data-t="lbl_web">School website</strong><a href="https://www.gav.sk/" target="_blank">www.gav.sk</a></div></div>
+<div class="cdet"><span class="ico">📋</span><div class="inf"><strong data-t="lbl_projnum">Project number</strong>2026-1-SK01-KA121-SCH-000409795</div></div>
+<div style="margin-top:1.5rem;display:flex;gap:10px;flex-wrap:wrap;">
+<a href="https://www.gav.sk/" style="display:flex;align-items:center;gap:6px;background:var(--pp);color:var(--purple);text-decoration:none;padding:8px 16px;border-radius:var(--rs);font-size:13px;font-weight:600;border:1px solid rgba(61,46,142,.2);" target="_blank">🏫 <span data-t="btn_gavweb">Visit GAV website</span></a>
+<a href="https://www.instagram.com/gav_levice" style="display:flex;align-items:center;gap:6px;background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);color:white;text-decoration:none;padding:8px 16px;border-radius:var(--rs);font-size:13px;font-weight:600;" target="_blank">📸 Instagram</a>
+</div>
+</div>
+<div>
+<form>
+<div class="fg"><label data-t="form_name">Your name</label><input data-ph="ph_name" placeholder="Full name" type="text"/></div>
+<div class="fg"><label data-t="form_email">Email</label><input placeholder="your@email.com" type="email"/></div>
+<div class="fg"><label data-t="form_subject">Subject</label>
+<select>
+<option data-t="subj1">General enquiry</option>
+<option data-t="subj2">Mobility information</option>
+<option data-t="subj3">Partnership</option>
+<option data-t="subj4">Media / press</option>
+</select>
+</div>
+<div class="fg"><label data-t="form_msg">Message</label><textarea data-ph="ph_msg" placeholder="Your message..."></textarea></div>
+<button class="sbtn" data-t="btn_send" type="submit">Send message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- ═══ FOOTER ═══ -->
+<footer>
+<div class="flogos">
+<div class="flogo-box">
+<div class="flogo" id="footer-school-logo">
+<img id="footer-logo-img" src="images/gav-logo.png" style="max-height:36px;max-width:120px;object-fit:contain;"/>
+</div>
+<div style="font-size:11px;margin-top:6px;color:rgba(255,255,255,.4);">GAV Levice</div>
+</div>
+<div class="flogo-box">
+<div id="eu-logo-wrap"><div class="eu-badge"><div style="font-size:18px;">🇪🇺</div><div class="eu-txt">Co-funded by<br/>the European Union</div></div></div>
+<img id="eu-logo-img" src="images/eu-logo.jpg" style="max-height:48px;max-width:180px;object-fit:contain;border-radius:var(--rs);"/>
+</div>
+<div class="flogo-box" id="proj-logo-wrap" style="display:flex;">
+<div class="flogo"><img id="proj-logo-img" src="images/gav-logo.png" style="max-height:36px;max-width:120px;object-fit:contain;"/></div>
+<div data-t="proj_lbl" style="font-size:11px;margin-top:6px;color:rgba(255,255,255,.4);">Project logo</div>
+</div>
+</div>
+<div class="footer-social">
+<a href="https://www.gav.sk/" target="_blank">🏫 <span data-t="footer_gavweb">GAV Levice website</span></a>
+<a href="https://www.instagram.com/gav_levice" target="_blank">📸 Instagram @gav_levice</a>
+<a href="#contact">✉ <span data-t="footer_contact">Contact us</span></a>
+</div>
+<div class="flinks">
+<a href="https://www.gav.sk/" target="_blank">www.gav.sk</a>
+<a data-t="nav_about" href="#about">About</a>
+<a data-t="nav_partners" href="#partners">Partners</a>
+<a data-t="nav_news" href="#news">News</a>
+<a data-t="nav_contact" href="#contact">Contact</a>
+</div>
+<div style="font-size:11px;color:rgba(255,255,255,.3);margin-bottom:1rem;">Project ID: 2026-1-SK01-KA121-SCH-000409795</div>
+<div class="fcopy">© 2026 Gymnázium Andreja Vrábla Levice · <span data-t="all_rights">All rights reserved</span></div>
+<div class="fdiscl" data-t="eu_disclaimer">Co-funded by the Erasmus+ Programme of the European Union. The European Commission's support does not constitute an endorsement of the contents, which reflect the views only of the authors.</div>
+</footer>
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true" style="visibility: visible !important;"><template shadowmode="open"><div aria-label="grammarly-integration" class="grammarly-desktop-integration" data-content='{"mode":"full","isActive":true,"isUserDisabled":false}' role="group" tabindex="-1"></div></template></grammarly-desktop-integration></html>
